@@ -1,25 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Code Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Code Portfolio for Noah Crandall</h1>
+    <header class="hero">
+        <div class="hero__content">
+            <h1>Code Portfolio for Noah Crandall</h1>
+            <p class="hero__lead">A curated set of experiments exploring neural networks, terminal games, and playful automation.</p>
+            <div class="hero__actions">
+                <a class="btn btn--primary" href="#projects">View Projects</a>
+                <a class="btn btn--ghost" href="#contact">Contact Me</a>
+            </div>
+        </div>
     </header>
-    <section>
-        <h2>PyTorch Neural Network</h2>
-        <a href="https://raw.githubusercontent.com/El-Guapo-2/First-website-not-really-/refs/heads/main/pytorch.py">View code</a>
-    </section>
-    <section>
-        <h2>Hangman Game</h2>
-        <a href="https://raw.githubusercontent.com/El-Guapo-2/First-website-not-really-/refs/heads/main/hangman.py">View code</a>
-    </section>
-    <section>
-        <h2>Windows Lagger</h2>
-        <a href="https://raw.githubusercontent.com/El-Guapo-2/First-website-not-really-/refs/heads/main/lag.bat">View code</a>
-    </section>
+    <main id="projects" class="portfolio">
+        <section class="project-card">
+            <div class="project-card__header">
+                <h2>PyTorch Neural Network</h2>
+            </div>
+            <p class="project-card__description">Description: A simple neural network implemented using PyTorch.</p>
+            <div class="project-card__actions">
+                <a class="btn btn--primary" href="https://raw.githubusercontent.com/El-Guapo-2/First-website-not-really-/refs/heads/main/pytorch.py">View code</a>
+            </div>
+        </section>
+        <section class="project-card">
+            <div class="project-card__header">
+                <h2>Hangman Game</h2>
+            </div>
+            <p class="project-card__description">Description: A text-based Hangman game implemented in Python.</p>
+            <div class="project-card__actions">
+                <a class="btn btn--primary" href="https://raw.githubusercontent.com/El-Guapo-2/First-website-not-really-/refs/heads/main/hangman.py">View code</a>
+            </div>
+        </section>
+        <section class="project-card">
+            <div class="project-card__header">
+                <h2>Windows Lagger</h2>
+            </div>
+            <p class="project-card__description">Description: A simple batch script to create extreme lag on Windows systems over a long amount of time.</p>
+            <div class="project-card__actions">
+                <a class="btn btn--primary" href="https://raw.githubusercontent.com/El-Guapo-2/First-website-not-really-/refs/heads/main/lag.txt">View code</a>
+            </div>
+        </section>
+    </main>
+    <footer id="contact" class="site-footer">
+        <div class="site-footer__inner">
+            <h2>Contact Me</h2>
+            <p>Add your preferred contact details or a short call to action here.</p>
+            <div class="site-footer__links">
+                <a class="btn btn--secondary" href="mailto:your.email@example.com">Email</a>
+                <a class="btn btn--ghost" href="#">LinkedIn</a>
+                <a class="btn btn--ghost" href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
